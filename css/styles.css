@@ -1,6 +1,7 @@
 @import url('/css/cards.css'); /* Importing the styles for card transitions */
 @import url('/css/animated-objects.css'); /* Importing the styles for animated objects */
-*{
+@import url('/css/scroll.css'); /*Importing styles for scroll animation styles */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #fff9f7;
 }
 
 main {
@@ -30,6 +31,7 @@ section {
     @media (min-width: 900px) {
         grid-template-columns: repeat(3, 1fr);
     }
+    &.no-grid {display: block;}
 }
 
 img {
